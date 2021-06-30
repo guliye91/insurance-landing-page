@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+/* global styling */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+/* end of global styling */
+
+body {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+}
+/* navbar section */
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  height: 6rem;
+}
+
+.navbar .main-menu {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar .main-menu a {
+  text-transform: uppercase;
+  color: hsl(273, 4%, 51%);
+  letter-spacing: 0.1rem;
+  padding: 0 0.5rem 0 0;
+}
+.navbar .main-menu a:hover {
+  color: hsl(256, 26%, 20%);
+}
+.close-icon,
+.hamburger-icon {
+  display: none;
+}
+.navbar .view a {
+  color: hsl(270, 9%, 17%);
+}
+.navbar .main-menu .btn {
+  border: 2px solid hsl(270, 9%, 17%);
+  padding: 1rem 1rem;
+  color: hsl(256, 26%, 20%);
+}
+.navbar .main-menu .btn:hover {
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+}
+/* end of navbar */
+/* showcase section */
+.showcase {
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  height: 40rem;
+}
+.showcase .overline {
+  width: 8rem;
+  height: 1px;
+  background-color: hsl(0, 0%, 98%);
+}
+.showcase-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.left-content {
+  padding: 8rem 0 0;
+}
+.left-content h1 {
+  width: 250px;
+  padding: 3rem 0 0;
+  font-family: "DM Serif Display", serif;
+  font-size: 3.5rem;
+}
+.left-content p {
+  width: 490px;
+  padding: 2rem 0 4rem;
+}
+.left-content a {
+  color: hsl(0, 0%, 98%);
+  border: 2px solid hsl(273, 4%, 51%);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+.left-content a:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+.right-content {
+  width: 40rem;
+  height: auto;
+}
+.right-content img {
+  position: relative;
+  top: 70px;
+  left: -180px;
+}
+/* services section */
+
+.services {
+  padding: 25rem 0 5rem;
+}
+.services .overline {
+  width: 8rem;
+  height: 1px;
+  background-color: hsl(273, 4%, 51%);
+}
+.services h2 {
+  padding: 2rem 0 5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.services h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+.services p {
+  padding: 2rem 0;
+  padding-right: 2rem;
+  color: hsl(273, 4%, 51%);
+}
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.services .image-container {
+  padding: 0 0 2rem;
+}
+/* who we are section */
+
+.who-we-are {
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  padding: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.who-we-are h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+}
+.who-we-are h2 span {
+  display: block;
+}
+.who-we-are .btn {
+  border: 1px solid hsl(0, 0%, 98%);
+  padding: 0.5rem 1rem;
+  color: hsl(0, 0%, 98%);
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.who-we-are .btn:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(256, 26%, 20%);
+}
+/* footer section */
+
+.footer-section {
+  background-color: hsl(0, 0%, 98%);
+}
+.logo-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(273, 4%, 51%);
+}
+.icons img {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.icons img:hover {
+  filter: hsl(256, 26%, 20%);
+}
+.footer-links {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-transform: uppercase;
+}
+.footer-links h3 {
+  padding: 2rem 0 3rem;
+  color: hsl(273, 4%, 51%);
+}
+.footer-links li {
+  padding: 0 0 1rem;
+}
+.footer-links a {
+  color: hsl(270, 9%, 17%);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* media queries */
+@media screen and (max-width: 1250px) {
+  .navbar .main-menu {
+    width: 50%;
+  }
+  .right-content img {
+    position: relative;
+    top: 70px;
+    left: -90px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar .main-menu {
+    width: 60%;
+  }
+  .right-content img {
+    position: relative;
+    top: 70px;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .left-content p {
+    width: 450px;
+  }
+  .right-content {
+    padding: 5rem 0 0;
+    width: 50rem;
+    height: auto;
+  }
+  .right-content img {
+    position: initial;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+  .navbar .main-menu {
+    position: absolute;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: hsl(256, 26%, 20%);
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .navbar .main-menu li {
+    padding: 0 0 2rem;
+  }
+  .navbar .main-menu a {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 98%);
+    letter-spacing: 0.1rem;
+  }
+  .navbar .view a {
+    color: hsl(0, 0%, 98%);
+  }
+  .navbar .main-menu .btn {
+    border: 2px solid hsl(0, 0%, 98%);
+    padding: 1rem 1rem;
+    color: hsl(0, 0%, 98%);
+  }
+  .navbar .main-menu .btn:hover {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+  }
+  /* showcase section */
+  .showcase {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    height: 60rem;
+  }
+  .showcase-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .right-content {
+    width: 40rem;
+    height: auto;
+    order: 1;
+  }
+  .right-content img {
+    top: 0;
+  }
+  .left-content {
+    padding: 1rem 0 0;
+    order: 2;
+    color: black;
+  }
+  .showcase .overline {
+    display: none;
+  }
+}
