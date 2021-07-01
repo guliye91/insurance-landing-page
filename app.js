@@ -1,9 +1,14 @@
 const hamburger = document.querySelector('.hamburger-icon');
 const menu = document.querySelector('.main-menu');
+const links = document.querySelectorAll('.main-menu a');
 
-console.log(menu)
 
 hamburger.addEventListener('click', ()=>{
     menu.classList.toggle('show');
-    console.log(menu)
+})
+
+links.forEach((link)=>{
+    link.addEventListener('click',()=>{
+        menu.classList.remove('show');
+    })
 })
