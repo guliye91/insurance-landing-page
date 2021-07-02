@@ -63,6 +63,10 @@ body {
 .hamburger-icon {
   display: none;
 }
+.close-icon {
+  padding-right: 2rem;
+  cursor: pointer;
+}
 .navbar .view a {
   color: hsl(270, 9%, 17%);
 }
